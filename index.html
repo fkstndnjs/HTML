@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- meta 요소, 해당 문서 혹은 애플리케이션의 metadata를 담는 요소 -->
+    <!-- charset, 문자 인코딩을 어떻게 할 것인지 결정-->
+    <!-- UTF-8, 전세계 언어 대부분을 지원 -->
+    <!-- EUC-KR, 한국어와 영문을 지원 -->
+    <!-- 사용하고 있는 DB의 charset과 맞춰서 작업 -->
     <meta charset="UTF-8" />
+
+    <!-- viewport, 모바일 브라우저에서 화면을 어떻게 노출시킬지-->
+    <!-- viewport가 없으면 모바일 브라우저에서 화면 렌더링이 이상하게 동작 -->
+    <!-- 모바일 브라우저 = 태블릿 PC 포함 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO에 도움을 주는 metadata -->
+    <meta
+      name="description"
+      content="메타데이터 요소에 대한 설명을 다루는 웹페이지입니다"
+    />
+
+    <!-- Social Metadata: Facebook - Open Graph -->
+    <!-- Open Graph Protocol: -->
+    <meta property="og:title" content="metadata element" />
+    <meta
+      property="og:description"
+      content="메타데이터 요소에 대한 설명을 다루는 웹페이지입니다"
+    />
     <title>Document</title>
   </head>
-  <body>
-    <section>
-      <header>
-        <h1>HTML basic</h1>
-      </header>
-      <p>HTML basic text</p>
-      <footer>2022-10-09</footer>
-    </section>
-  </body>
+  <body></body>
 </html>
