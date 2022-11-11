@@ -8,7 +8,7 @@
     <!-- body 요소는 콘텐츠를 담는 HTML 요소 -->
     <!-- body 요소 내부가 콘텐츠 대부분을 차지하니, 용량이나 시맨틱에 신경을 많이 써야함 -->
     <body>
-        <!-- heading -->
+        <!-- heading 요소: 제목 -->
         <!-- h1, h2, h3, h4, h5, h6 -->
         <!-- h1: 가장 중요한 제목, h6: 가장 덜 중요한 제목 -->
         <!-- heading 요소를 사용하면 제목을 포함하는 익명 영역(anonymous section)을 만든다 -->
@@ -20,7 +20,13 @@
         <h2>HTML Aside 요소</h2>
         <p>Section 3</p>
 
-        <!-- section, article -->
+        <!-- HTML Section 요소 -->
+        <!-- |- HTML Article 요소 -->
+        <!-- |- HTML Aside 요소 -->
+        <!-- 한 Content 밑에 다른 Content의 제목들이 들어가면서 페이지 전체의 구조를 잡는 행위를 아웃라인을 잡는다라고 함 -->
+        <!-- 아웃라인이 잘 정의되어 있으면 나중에 네비게이션을 할때에도 용이해지고 크롤러나 콘텐츠를 긁어가는 다양한 도구들이 콘텐츠를 긁어갈때 여기가 가장 중요한 제목이고 이 콘텐츠가 가장 중요한 콘텐츠겠구나를 인식하고 긁어갈 수 있기 때문에 나중에 좀 더 시멘틱 쪽으로 유리한 작업을 수행할 수 있음 -->
+
+        <!-- section 요소 & article 요소 -->
         <!-- 어떤 경우에 section을 쓰고, 어떤 경우에 article을 쓰는가? -->
         <!-- 콘텐츠의 독립성을 기준으로 한다 -->
         <!-- article 요소는 콘텐츠가 독립적일 때 사용 -->
@@ -42,11 +48,11 @@
             </section>
         </article>
 
-        <!-- header, hgroup -->
+        <!-- header 요소 & hgroup 요소 -->
         <!-- header는 특정한 콘텐츠의 시작부분을 나타내는 요소 -->
         <article>
             <header>
-                <!-- hgroup 요소는 heading 요소를 그룹화하여 제목 - 부제목관계를 만드는 요소 -->
+                <!-- hgroup 요소는 heading 요소를 그룹화하여 "제목 - 부제목" 관계를 만드는 요소 -->
                 <hgroup>
                     <h1>HTML Section 요소</h1>
                     <h2>부제목</h2>
@@ -65,15 +71,19 @@
             </section>
         </article>
 
-        <!-- footer, address 요소 -->
-        <!-- 콘텐츠의 마무리 -->
-        <!-- copyright, 작성자 정보, 작성일 -->
+        <!-- footer & address 요소 -->
         <footer>
-            <p>footer</p>
+            <!-- footer 요소: 콘텐츠의 마무리 -->
+            <!-- copyright, 작성자 정보, 작성일 -->
+            <p>
+                <cite>출처: <a href="https://www.naver.com">네이버</a></cite>
+            </p>
+
             <!-- address 요소: contact information -->
             <address>
                 <p>작성자: <a href="mailto:fkstndnjs@naver.com">유석현</a></p>
             </address>
+
             <!-- publication information -->
             <p>
                 <time>2022-10-11</time>
@@ -87,7 +97,6 @@
         </nav>
         <article>
             <header>
-                <!-- hgroup 요소는 heading 요소를 그룹화하여 제목 - 부제목관계를 만드는 요소 -->
                 <hgroup id="html-section">
                     <h1>HTML Section 요소</h1>
                     <h2>부제목</h2>
@@ -98,11 +107,6 @@
             <section id="html-article">
                 <h2>HTML Article 요소</h2>
                 <p>Section 2</p>
-            </section>
-
-            <section>
-                <h2>HTML Aside 요소</h2>
-                <p>Section 3</p>
             </section>
         </article>
 
