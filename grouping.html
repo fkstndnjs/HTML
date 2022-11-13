@@ -6,5 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 무언가를 Grouping 하는 목적 -->
+
+    <!-- p 요소, paragraph -->
+    <!-- p요소 안에 p요소가 들어갈 수는 없음 -->
+    <h1>HTML Grouping Content</h1>
+    <p>Hello World</p>
+
+    <!-- blockquote 요소 -->
+    <blockquote>
+      <p>
+        HTML은 문서를 표현하기 위해 만들어진 언어이지만, 현재는 웹
+        애플리케이션에서도 활용됩니다.
+      </p>
+      <cite>MDN</cite>
+    </blockquote>
+
+    <!-- ol(ordered list), ul(unordered list), menu, li(list item) -->
+    <ol>
+      <li>HTML Grouping Content</li>
+      <li>HTML Text-level semantics</li>
+    </ol>
+
+    <ul>
+      <li>HTML Grouping Content</li>
+      <li>HTML Text-level semantics</li>
+    </ul>
+
+    <!-- dl(definition list), dt(정의 대상), dd(정의 설명) -->
+    <!-- dl 요소 내에서 특정 요소들을 그룹화해야하는 경우에 한하여 div 요소를 활용-->
+    <dl>
+      <div>
+        <dt>마늘</dt>
+        <dd>알싸한 맛이 나는 채소</dd>
+      </div>
+    </dl>
+
+    <!-- figure, figcaption -->
+    <!-- figure 요소는 콘텐츠의 부연설명을 하는 콘텐츠를 담을 때 사용-->
+    <!-- figcaption 요소는 콘텐츠의 부연설명을 하는 콘텐츠를 작성하는 요소 -->
+
+    <p>우주에 관한 내용</p>
+    <figure>
+      <img src="nasa.jpg" alt="" />
+      <figcaption>우주에 관한 보충 설명</figcaption>
+    </figure>
+    <p>우주에 관한 내용</p>
+
+    <!-- main -->
+    <!-- 해당 애플리케이션이나 페이지에서 가장 중요한 콘텐츠를 담는 컨테이너 요소-->
+    <!-- 한 페이지 내에서 한 번만 사용 가능-->
+    <main>메인 콘텐츠</main>
+
+    <!-- hidden 속성 등을 활용하여 main 요소를 감춘 경우에는 여러번 사용 가능 -->
+    <!-- 활성화 되어있는 main 요소는 언제느 하나만 존재해야 한다 -->
+    <main hidden></main>
+    <main hidden></main>
+    <main hidden></main>
+
+    <!-- div -->
+    <!-- div 요소는 의미 없이 CSS 등의 목적으로 여러 요소를 그루핑할 때 사용 -->
+    <!-- div 요소는 정말 최후의 수단으로만 활용 -->
+    <div>div</div>
+  </body>
 </html>
