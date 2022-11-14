@@ -7,6 +7,106 @@
         <title>Document</title>
     </head>
     <body>
-        <!-- Form -->
+        <!-- form -->
+        <!-- order form -->
+        <!-- label, input -->
+        <!-- input의 id를 label에서 for로 받아서 라벨을 씌워줌 -->
+        <form>
+            <!-- fieldset, legend -->
+            <!-- form 내부에서 구역을 나눌 때 사용 -->
+            <fieldset>
+                <legend>유저정보</legend>
+                <div>
+                    <label for="uid">아이디</label>
+                    <input
+                        id="uid"
+                        type="text"
+                        autocomplete="username"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="upw">비밀번호</label>
+                    <input
+                        id="upw"
+                        type="password"
+                        autocomplete="current-password"
+                        required
+                    />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>배달정보</legend>
+                <div>
+                    <label for="tel">전화번호</label>
+                    <input id="tel" type="tel" />
+                </div>
+                <div>
+                    <label for="addr">주소</label>
+                    <input id="addr" type="text" />
+                </div>
+                <div>
+                    <!-- radio -->
+                    <!-- name이 같아야 하나의 폼으로 여겨서 하나만 선택할 수 있게됨 -->
+                    <h2>사이즈 선택</h2>
+                    <input
+                        type="radio"
+                        id="small"
+                        name="size"
+                        value="small"
+                        checked
+                    />
+                    <label for="small">스몰</label>
+                    <input
+                        type="radio"
+                        id="medium"
+                        name="size"
+                        value="medium"
+                    />
+                    <label for="medium">미디움</label>
+                    <input type="radio" id="large" name="size" value="large" />
+                    <label for="large">라지</label>
+                </div>
+                <div>
+                    <!-- checkbox -->
+                    <!-- radio와 마찬가지로 name이 같아야 하나의 폼으로 여겨짐 -->
+                    <h2>토핑 추가</h2>
+                    <label for="cheese">치즈 추가</label>
+                    <input
+                        type="checkbox"
+                        id="cheese"
+                        name="topping"
+                        values="cheese"
+                    />
+                    <label for="tomato">토마토 추가</label>
+                    <input
+                        type="checkbox"
+                        id="tomato"
+                        name="topping"
+                        values="tomato"
+                    />
+                    <label for="mushroom">버섯 추가</label>
+                    <input
+                        type="checkbox"
+                        id="mushroom"
+                        name="topping"
+                        values="mushroom"
+                    />
+                </div>
+                <div>
+                    <!-- textarea -->
+                    <label for="requirement">추가요청사항</label>
+                    <textarea id="requirement"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- button -->
+            <!-- button의 기본 타입은 submit -->
+            <!-- submit 동작이 아닌 자바스크립트를 동작시키고자 한다면 button-->
+            <!-- form 내부의 값을 리셋시키고자 한다면 reset -->
+            <button type="submit">주문하기</button>
+            <button type="button">취소하기</button>
+            <button type="reset">리셋</button>
+        </form>
     </body>
 </html>
