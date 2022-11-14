@@ -7,6 +7,138 @@
         <title>Document</title>
     </head>
     <body>
-        <!-- 표 -->
+        <!-- table -->
+        <table border="1">
+            <caption>
+                표의 제목
+            </caption>
+            <tr>
+                <td>표의 셀 1</td>
+                <td>표의 셀 2</td>
+                <td>표의 셀 3</td>
+            </tr>
+            <tr>
+                <td>표의 셀 1</td>
+                <td>표의 셀 2</td>
+                <td>표의 셀 3</td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <!-- caption -->
+        <!-- table의 제목, 설명 -->
+        <!-- 가급적 넣는 것이 좋음 -->
+        <table border="1">
+            <caption>
+                <p>2022년 기대작</p>
+            </caption>
+            <tr>
+                <td>제목</td>
+                <td>작성일</td>
+                <td>요약</td>
+            </tr>
+            <tr>
+                <td>제목입니다</td>
+                <td>2022-11-14</td>
+                <td>영화의 요약입니다</td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <!-- thead, tbody, tfoot -->
+        <table border="1">
+            <caption>
+                2022년 기대작
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>작성일</th>
+                    <th>요약</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>제목입니다</td>
+                    <td>2022-11-14</td>
+                    <td>영화의 요약입니다</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- 테이블 전체를 정리하는 콘텐츠 -->
+            </tfoot>
+        </table>
+
+        <hr />
+
+        <!-- colgroup, col -->
+        <!-- CSS를 쉽게 넣을 수 있음 -->
+        <table border="1">
+            <caption>
+                2022년 기대작
+            </caption>
+            <colgroup>
+                <col class="table-cell table-cell-title" />
+                <col class="table-cell table-cell-date" />
+                <col class="table-cell table-cell-content" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <!-- <th class="table-cell table-cell-title" >제목</th>
+                    <th class="table-cell table-cell-date">작성일</th>
+                    <th  class="table-cell table-cell-content">요약</th> -->
+                    <th>제목</th>
+                    <th>작성일</th>
+                    <th>요약</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <th class="table-cell table-cell-title" >제목입니다</th>
+                    <th class="table-cell table-cell-date">2022-11-14</th>
+                    <th  class="table-cell table-cell-content">영화의 요약입니다</th> -->
+                    <td>제목입니다</td>
+                    <td>2022-11-14</td>
+                    <td>영화의 요약입니다</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+
+        <hr />
+
+        <!-- tr(table row), th(table head), td(table data) -->
+        <!-- row: 행, column: 열 -->
+        <table border="1">
+            <tr>
+                <th>table header</th>
+                <th>table header 1</th>
+                <th>table header 2</th>
+                <th colspan="2">병합된 셀</th>
+            </tr>
+            <tr>
+                <th>table header 1</th>
+                <td>table data 1</td>
+                <td>table data 1</td>
+                <td>병합된 셀 data 1</td>
+                <td>병합된 셀 data 2</td>
+            </tr>
+            <tr>
+                <th rowspan="2">table header 2</th>
+                <td>table data 2</td>
+                <td>table data 2</td>
+                <td>병합된 셀 data 1</td>
+                <td>병합된 셀 data 2</td>
+            </tr>
+            <tr>
+                <td>table data 3</td>
+                <td>table data 3</td>
+                <td>병합된 셀 data 1</td>
+                <td>병합된 셀 data 2</td>
+            </tr>
+        </table>
     </body>
 </html>
